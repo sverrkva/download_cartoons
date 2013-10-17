@@ -2,6 +2,7 @@ import urllib.request
 from bs4 import BeautifulSoup as BS
 import datetime
 import os
+import functions #my own
 
 
 # Set the directory where you wants to store the cartoons
@@ -26,7 +27,8 @@ def download_VG (cart_id, storing_name):
     tag = ''.join(name_string_array)
 
     # Downlad the picture
-    urllib.request.urlretrieve(picture_url, tag)
+    #urllib.request.urlretrieve(picture_url, tag)
+    functions.download_file(picture_url)
 
     print ("Finished " + tag)
    
@@ -51,7 +53,8 @@ def download_DB (url, cart_id, storing_name):
     tag = ''.join(string_array)
 
     # Downlad the picture
-    urllib.request.urlretrieve(picture_url, tag)
+    #urllib.request.urlretrieve(picture_url, tag)
+    functions.download_file(picture_url)
 
     print ("Finished " + tag)
    
