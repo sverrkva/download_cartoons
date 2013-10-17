@@ -36,6 +36,6 @@ nosetests.xml
 .pydevproject
 
 # Pictures
-*.jpg 
-*.png
+.jpg 
+.png
 
