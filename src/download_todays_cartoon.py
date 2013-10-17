@@ -5,7 +5,7 @@ import os
 
 
 # Set the directory where you wants to store the cartoons
-directory = "./Downloaded_cartoons/"
+directory = "../Downloaded_cartoons/"
 
 # Check if the directory exists. If not - create it
 if not os.path.exists(directory):
